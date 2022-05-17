@@ -1,4 +1,4 @@
-
+/*
 #p1{
      background-color:aqua;
      font-size:40px;
@@ -30,7 +30,13 @@ p{
 nav {
     background-color: #41E5D1;
     height:48px;
+    width: 100%;
+    z-index:2;
+    position:sticky;
+    top:0;
+
 }
+
 #menu{
     list-style-type:none;
     display:inline-flex;
@@ -44,9 +50,110 @@ nav {
 }
 
 #banner {
-    margin-top: 3px;
+    position:relative;
+    top: 2px;
     background-image: url('izabelly-marques-AM8PSU6HoVw-unsplash.jpg');
-    height: 700px;
+    height: 250px;
     width: 100%;
     background-position: bottom;
 }
+    */
+
+
+header {
+    position: relative;
+    height: 31px;
+}
+
+    header marquee p {
+        position: relative;
+        top: -17px;
+    }
+
+nav {
+    background-color: #F2F4F4;
+    height: 48px;
+    width: 100%;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+#menu {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+}
+
+    #menu li {
+        margin-right: 30px;
+    }
+
+        #menu li a {
+            text-decoration: none;
+        }
+
+#banner {
+    position: relative;
+    top: 2px;
+    background-image: url('izabelly-marques-AM8PSU6HoVw-unsplash.jpg');
+    height: 250px;
+    width: 100%;
+    background-position: bottom;
+}
+
+    /* static , relative -allow element to apply margin,padding & border, absolute- follow the parent & set the postion on the age
+ , fixed, sticky */
+    #banner h1 {
+        position: absolute;
+        top: 82px;
+        left: 84px;
+    }
+
+.left-panel {
+    position: relative;
+    height: 400px;
+    background: #F2F4F4;
+    width: 20%;
+    top: -12px;
+}
+
+    .left-panel ul {
+        list-style: none;
+        display: block;
+    }
+
+        .left-panel ul li {
+            position: relative;
+            top: 18px;
+            padding-top: 14px;
+        }
+
+.main-content {
+    position: relative;
+    height: 650px;
+    top: -400px;
+    margin-left: 248px;
+    width: 77%;
+    overflow-y: auto;
+}
+
+table td {
+    width: 36%;
+}
+
+.footer {
+    position: relative;
+    height: 90px;
+    background: #1B2631;
+    margin-top: -381px;
+}
+
+    .footer p {
+        position: absolute;
+        top: 10px;
+        color: white;
+        left: 10px;
+    }
+
+
