@@ -1,0 +1,25 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+        var emp = {};
+        emp.Id = 1;
+        emp.Name = "Kiran";
+
+        const employee = {
+            firstname: "Kiran",
+            lastname: "Sonawane",
+            age: 30,
+        }
+        const product = {
+            id: 1,
+            name: "mouse",
+            price: 399
+        }
+        console.log(employee.firstname + employee["lastname"]);
+        console.log(product["name"] + product.price);
+        console.log(emp.Name);
+        document.getElementById("d1").innerHTML = Object.values(employee);
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!--<html>
+<head></head>
+<body>
+
+    <script>
+
+            <!--    function addition() {
+            var a = 10, b = 20, c;
+            c = a + b;
+            console.log("Addition is " + c);
+        }
+        function sub(n1, n2) {
+            var sub;
+            sub = n1 - n2;
+            console.log("Substraction is " + sub)
+        }
+        function display(empid, empname, empsalary) {
+            console.log(empid + " " + empname + " " + empsalary);
+        }
+        function sub2(n1, n2) {
+            var sub;
+            sub = n1 - n2;
+            return sub;
+        }
+        addition();
+        sub(40, 20);
+        display(101, "kiran", 50000)
+        var result = sub2(56, 11);
+        console.log(result); -->
+    </script>
+</html>
+</body>-->
+
+
+<body>
+    <p>
+        Enter a number :<input type="text" id="n1" />
+    </p>
+    <p>
+        Enter a number :<input type="text" id="n2" />
+    </p>
+    <p>
+        Result   :<input type="text" id="n3" />
+    </p>
+    <p>
+        <input type="button" value="Addition" onclick="addition()" />
+        <input type="button" value="Subtraction" onclick="subtraction()" />
+        <input type="button" value="Multiplication" onclick="multiplication()" />
+        <input type="button" value="Division" onclick="division()" />
+    </p>
+
+    <script>
+        function addition() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) + parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function subtraction() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) - parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function multiplication() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) * parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function division() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) / parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+    </script>
+
+</body>
+

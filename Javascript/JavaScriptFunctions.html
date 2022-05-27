@@ -1,0 +1,39 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        //call(),bind(),apply()
+
+        const employee = {
+            age: 23,
+            fullname: function (city, country) {
+                 return this.firstname + " " + this.lastname + " " + city + " " + country;
+            }
+        }
+        const member = {
+            firstname: "kiran",
+            lastname: "sonawane"
+        }
+     
+        // document.getElementById("d1").innerHTML=employee.fullname.call(member, "mumbai", "pune");
+        document.getElementById("d1").innerHTML = employee.fullname.apply(member, ["mumbai", "pune"]);
+
+        const employee1 = {
+            firstname: "somesh",
+            lastname: "phatangre",
+            age: 23,
+            fullname: function () {
+                return this.firstname + " " + this.lastname ;
+            }
+        }
+        const member1 = {
+            firstname: "kiran",
+            lastname: "sonawane"
+        }
+        let empinfo = employee1.fullname.bind(member1);
+        document.getElementById("d1").innerHTML = empinfo();
+
+    </script>
+</body>
+</html>

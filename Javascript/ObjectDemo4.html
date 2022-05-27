@@ -1,0 +1,23 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+       
+        const marks = {
+            id:1,
+            name:"kiran",
+            java: 77,
+            sql: 88,
+            os: 66,
+
+            percent: function () {
+                return ((this.java + this.sql + this.os) / 300) * 100;
+            },
+            display: function () {
+                return "roll no:" + this.rollno + "name:" + this.name + "percentage:" + this.percent();
+            }
+        }
+        document.getElementById("d1").innerHTML = marks.display();
+    </script>
+</body>
+</html>
